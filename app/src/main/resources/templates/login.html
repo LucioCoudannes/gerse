@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+  class="login-html"
+>
+  <head th:replace="~{/fragments/head :: head}"></head>
+
+  <body class="body-login">
+
+    <header th:replace="~{/fragments/header :: header}"></header>
+
+    <main>
+
+        <div class="login">
+            <h1>Login</h1>
+            <form method="post">
+                <input class="inputLogin" type="text" name="u" placeholder="Username" required="required" />
+                <input class="inputLogin" type="password" name="p" placeholder="Password" required="required" />
+                <button type="submit" class="btn btn-primary btn-block btn-large">Ingresar</button>
+            </form>
+        </div>
+
+
+
+
+    </main>
+    <footer th:replace="~{/fragments/footer :: footer}"></footer>
+  </body>
+</html>
